@@ -1,2 +1,2 @@
-# Streamlit-Face-GAN
-Face GAN by streamlit
+# Face-GAN
+Face GAN inspired by streamlit and nvidia.
