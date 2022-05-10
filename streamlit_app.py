@@ -74,7 +74,7 @@ def streamlit_run():
     session, pg_gan_model = load_pg_gan_model()
 
     name = st.text_input("What is your name?", "Name")
-    date = st.date_input("When is your birthday?", datetime.date(2000, 1, 1))
+    date = st.date_input("When is your birthday?", datetime.date(2000, 1, 1), datetime.date(1900, 1, 1), datetime.date.today())
 
     seed = generate_seed(name, date)
     features = get_random_features(feature_names, seed)
